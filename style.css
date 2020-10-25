@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+.offset:before {
+  display: block;
+  content: "";
+  height: 3.8rem;
+  margin-top: -3.8rem;
+}
+
+/*--- Nvbar --*/
+.navbar{
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  background: #000000;
+}
+.navbar-brand img{
+  height: 3.5rem;
+}
+.navbar-nav li{
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #cc99ff;
+}
+
+/*--- Slider --*/
+
+.carousel-item {
+  
+  height: 100vh;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  
+}
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.carousel-caption h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+.heading-underline {
+  width: 7rem;
+  height: .2rem;
+  background-color: white;
+  margin: 0 auto 1rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 50%, 50%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+ 
+/*---- Inspirational ---*/
+blockquote .svg-inline--fa {
+  color: #1ebba3;
+  margin: 1rem;
+}
+
+{box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+/*----About Section ----*/
+.card {
+  margin: 2rem;
+}
+
+/*---- Blog Section --*/
+.narrow {
+  width: 100%;
+  background-position: center;
+  background-image: url('img/ascessories.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.narrow h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: black;
+  padding: 3rem 0 1rem;
+}
+.narrow h3 {
+  font-size: 2rem;
+}
+
+/*---- Introductory Blog Section --*/
+.narrow h4 {
+  color: black;
+  padding: 2rem 2rem 4rem 30rem;
+  
+}
+/*---- Newsletter Blog Section --*/
+
+/****email box in newsletter section *******/
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 150%;
+  background: #f1f1f1;
+}
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/****End email box in newsletter section *******/
+
+.gradient-button {
+  padding: 15px 15px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #ff0066, #ff6600);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.gradient-button:hover {background-color: #3e8e41}
+
+.gradient-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*---- Techie Blog Section --*/
+.portfolio img {
+  max-width: 100%;
+  transition: transform .5s ease;
+}
+.row.no-padding [class*=col-] {
+  padding: 0;
+}
+.portfolio img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+.portfolio {
+  overflow: hidden;
+}
+/*---- Articles Blog Section --*/
+
+/*---- Contact Section --*/
+.fixed {
+  background-image: url(img/dark_img.png);
+  z-index: -1;
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 7rem 2rem;
+}
+
+
+
+.contact img {
+  height: 400px;
+  width: 70%;
+  border-radius: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+.contact h3 {
+  font-size: 30px; 
+  font-family: 'Marck Script', cursive;
+}
+
+blockquote .svg-inline--fa {
+  color: #1ebba3;
+  margin: 1rem;
+}
+.contact-hr {
+  border-top: .05rem solid #1ebba3;
+} 
+
+/******Contact Form ***/
+#contact {
+  padding: 30px 0;
+}
+
+#contact h5 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1ebba3;
+}
+
+#contact .form #sendmessage {
+  color: #18d26e;
+  border: 1px solid #18d26e;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input,
+#contact .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#contact .form button[type="submit"] {
+  background: #1ebba3;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#contact .form button[type="submit"]:hover {
+  background: #0e584d;
+}
+/*****Button for Whatsapp *****/
+#contact .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #18d26e;
+}
+
+#contact .btn-get-started:hover {
+  background: #118849;
+  color: #fff;
+}
+
+/******* Footer Section **********/
+footer {
+  background-color: #48474e;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0; 
+}
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3; 
+}
+hr.socket {
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+
+/*--- Media Queries --*/
+@media (max-width: 767px) {
+  /*** Home ***/
+  html {
+    font-size: 13px;
+  }
+  .carousel-caption {
+  top: 35%;
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.8rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    font-size: 1.5rem;
+  }
+  
+
+  /*** Introductory blog section ***/
+  .narrow h4 {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  /*** Articles ***/
+  .contact img {
+  height: 300px;
+  width: 65%;
+  border-radius: 50%;
+  }
+
+  /***** Search Box in newsletter ***/
+  form.example input[type=text] {
+  width: 110%;
+}
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

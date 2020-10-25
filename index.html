@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- cdnjs is for searchbox in newsletter section -->
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css1/fixed.css">
+	
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!--- Start Home Section -->
+<div id="home">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#inspirational">Inspirational</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#about">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#blog">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!--- Start Image Slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active" style="background-image: url(img/mobile.png);">
+		
+			<div class="carousel-caption text-center">
+				<h1>Welcome<br> To <br>Developer's World</h1>
+				<h3><i>My First Website</i></h3>
+				<div class="heading-underline"></div>
+				<a class="btn btn-outline-light btn-lg" href="#inspirational"><b>Get Started</b></a>
+			</div>
+		</div>
+
+		<!--- Slide 2 -->
+		<div class="carousel-item" style="background-image: url(img/nicole.png);"></div>
+		
+		<!--- Slide 2 -->
+		<div class="carousel-item" style="background-image: url(img/laptop.png);"></div>
+		
+
+	</div> <!--- End Carousel Inner -->
+
+	<!--- Prev & Next Buttons -->
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	</a>
+</div>
+<!--- End Image Slider -->
+
+<!--- Start Inspirational Section -->
+
+<div id="inspirational" class="offset">
+
+<div class="jumbotron container-fluid" style="font-family:Times New Roman;">
+
+<!--- Info Message -->
+<style>
+.alert {
+  padding: 20px;
+  background-color: #669999;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="alert info">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <h5>Five Things You should know about 5G.</h5>
+  <a class="btn btn-outline-light btn-lg" href="https://www.bhphotovideo.com/explora/mobile/tips-and-solutions/5-things-you-need-to-know-about-5g" target="_blank"><b>Know More</b></a>
+</div>
+<!--- End of Info Message -->
+	<div class="col-12 text-center inspirational" style="color: black;">
+		
+		<h3><blockquote>
+		<i class="fas fa-quote-left"></i>
+		<b>NO MATTER YOUR CURRENT</b></h3> <br>
+		<h1><b>CIRCUMSTANCES,</b></h1> <br>
+		<h1><b>IF YOU CAN IMAGINE SOMETHING</b></h1> <br>
+		<h3><b>BETTER FOR YOURSELF,</b></h3> <br>
+		<h1><b>YOU CAN CREATE IT.</b></h1>
+		</blockquote>
+	
+	<div class="heading-underline" style="background-color: #1ebba3;"></div>
+	</div>
+
+<!--- chat box --->
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #1E90FF;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+
+
+}
+</style>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+	<label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<!----End Chat box -->
+
+</div>
+
+<!--- End Inspirational Section -->
+
+
+<div id="about" class="offset">
+	<div class="row padding">
+
+
+	<div class="col-md-5" style="padding-top: 7rem;">
+		<div class="card text-center">
+			<img class="card-img-top" src="img/girl.png">
+			<div class="card-body">
+				<h4><i>"Weeks of coding can save your hours of planning."</i></h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<style>
+body {
+  background-color: black;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 70px;
+  color: #fff;
+  padding-left: 2rem;
+  text-align: left;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+<h1 class="glow">ABOUT</h1><br>
+
+<!--- About Content -->
+
+<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+
+<h1 style="font-family: 'Allura'; font-size: 33px; color: white; margin: 2rem;">My keen interest and passion for the web has led me to create a site that is both informative and entertaining.I have been working on it since long, and I am excited to share it with you all. The curiosity to learn more about the world of web development has always been there .And here's just a sample to get you started: What is web design? The idea that we should be able to make websites in a way that appeals to our audience is something I've been thinking about for quite some time now. The reason why I created it is that I want to explore how people can use their creativity to create beautiful websites. I hope that it will please you as well.</h1>
+	
+</div>
+
+</div>
+
+<!--- Blog Section -->
+<div id="blog" class="offset">
+
+<div class="col-12 narrow text-center">
+
+	<h1>Blogspot</h1>
+	<div class="heading-underline" style="background-color: black; height: .4rem;"></div>
+
+	<ul style="list-style-type:none">
+        <li><h3 style="padding-top: 1rem;"><a href="#introduction">Introductory</a></h3></li>
+        <li><h3><a href="#newsletter">Newsletter</a></h3></li>
+        <li><h3><a href="#portfolio">Techie</a></h3></li>
+        <li><h3 style="padding-bottom: 3rem;"><a href="#articles">Articles</a></h3></li>
+     </ul>
+		
+</div> <!--- End narrow class -->
+
+</div>
+<!--- End Blog Section -->
+
+<!--- Introductory Part of Blog section -->
+<div id="introduction" class="offset">
+	<div class="col-12 narrow text-center" style="width: 100%;
+	min-height: 100vh;
+  background-position: center;
+  background-image: url('img/writing.png');
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+	<h1 style="padding-top: 5rem; color: white; -webkit-text-stroke: 4px black;">Hi All</h1>
+	<h3 style="color: black; padding-left: 10rem;"><b><i>June 28, 2020</i></b></h3>
+	<h4><b>Hi friends here I am writing this blog to share my experiences and thoughts with you. The art of writing is an art of discovering what you believe. I have always been fascinated by the power of words. When you start learning new languages or learn something new, it's like you are in a different world altogether. But in such a busy life we tend to forget about our health and fitness. Living a Healthy Lifestyle with a Busy Schedule is not easy for most of us. We need to take care of ourselves physically and mentally. If you want to be fit and healthy, then your diet should be balanced with good nutrition. A healthy mind should be able to handle stress effectively. This will help you stay fit and healthy throughout your life. You can also try some simple exercises to get rid of stress. You can even try Yoga or meditation. These are great ways to reduce stress and improve your overall health. It might seem like a lot but it's actually very simple. And the effect it has on your health is amazing.</b></h4>
+	</div>
+</div>
+<!--- End of Introductory Part of Blog section -->
+
+<!--- Newsletter of Blog section -->
+<div id="newsletter" class="offset">
+	<div class="col-12 narrow text-center" style="width: 100%;
+	min-height: 100vh;
+  	background-position: center;
+  	background-image: url('img/newspaper.png');
+  	background-repeat: no-repeat;
+  	background-size: cover;">
+
+  	<h1 style="padding: 3rem 0 1rem; color: black; -webkit-text-stroke: 2px white;"><b>THIS WEEK IN WEB DESIGN</b></h1>
+  	
+  	<div class="col-md-6">
+
+  	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  	<h3 style="padding: 0rem 2rem .5rem; color: black; font-family: 'Courgette', cursive;"><b>Newsletters is a great place to stay up-to-date in all the latest news in technology, business, politics and more. We have a lot of exciting news coming our way everyday, and we want you to know what's happpening in the world of tech. We're always looking for new ways to keep up with the latest developments in technology and innovation. We handcraft our newsletter every Monday to bring you the latest news.</b></h3>
+  	
+
+  	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  	<h3 style="padding: .5rem 2rem 1rem; color: #ff6600; -webkit-text-stroke: .5px black; letter-spacing: .1rem; font-family: 'Permanent Marker', cursive;"><b>Subscribe to the newsletter</b></h3>
+  	<!--<form action="insert.php" method="post">
+    	<input type="email" name="email"><input type="submit">-->
+    <form class="example" action="/insert.php" style="margin:auto; max-width:300px; float: left;">
+  	<input type="text" placeholder="email" name="search2">
+  	</form>
+  	<button type ="submit" class="gradient-button gradient-button" onclick="myFunction()" style="padding: 1rem;">Subscribe</button>
+  	
+  	<p id="demo">
+  	
+  	<script>
+	function myFunction() {
+  	document.getElementById("demo").innerHTML = "Subscribed";
+	}
+	</script>
+
+	
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
+</script>
+<p>Subscribed</p-->
+	
+	</div>
+
+  	</div> <!--- End narrow class -->
+
+</div>
+<!--- End of Newsletter Part of Blog section -->
+
+<!--- Techie of Blog section -->
+<div id="portfolio" class="offset">
+
+<div class="jumbotron container-fluid">
+	<div class="col-12 text-center">
+		<h1 class="heading" style="padding: 1rem; font-size: 60px; color: black;"><i><b>Techie</b></i></h1>
+		<div class="heading-underline" style="background-color: #1ebba3; height: .2rem;"></div>
+	</div>
+<div class="row no-padding" style="padding-top: 2rem;">
+	<div class="col-sm-4">
+		<div class="portfolio">
+		<a href="img/robot.png" target="_blank">
+			<img src="img/robot.png">
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="portfolio">
+		<a href="img/coding.png" target="_blank">
+			<img src="img/coding.png">
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="portfolio">
+		<a href="img/work.png" target="_blank">
+			<img src="img/work.png">
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="portfolio">
+		<a href="img/meeting.png" target="_blank">
+			<img src="img/meeting.png">
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="portfolio">
+		<a href="img/eat.png" target="_blank">
+			<img src="img/eat.png">
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="portfolio">
+		<a href="img/program.png" target="_blank">
+			<img src="img/program.png">
+		</a>
+		</div>
+	</div>
+
+</div> <!--- End Row -->
+</div> <!--- End Jumbotron -->
+	
+
+</div>
+<!--- End of Techie of Blog section -->
+
+<!--- Articles of Blog section -->
+<div id="articles" class="offset">
+
+<div class="col-12 narrow text-center" style="width: 100%;
+	min-height: 100vh;
+  background-position: center;
+  background-image: url('img/coffee.png');
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+  <link href='https://fonts.googleapis.com/css2?family=Marck+Script&family=Piedra&display=swap' rel='stylesheet'>
+  <h1 style="padding-top: 5rem; font-size: 60px; color: #1ebba3; -webkit-text-stroke: 1.5px black; font-family: 'Marck Script', cursive; 
+  font-family: 'Piedra', cursive;">How to be more productive by working less?</h1>
+
+  <link href='https://fonts.googleapis.com/css2?family=Marck+Script&display=swap' rel='stylesheet'>
+  <h3 style="padding: 1rem 1rem 3rem; color:black; -webkit-text-stroke: 2px black; font-size: 33px; font-family: 'Marck Script', cursive;">	The more you work the more your brain is able to process information. But Productivity isn't just about getting things done. It doesn't depend upon on the number of working hours you spend in a day. It's about being productive and not wasting time on useless tasks that don't add value to your life. The key is to make sure you're doing what makes you happy. And that means making sure you're doing things that bring joy to your life. The idea is just to do smart work and improving your efficiency rather than being indulging in working all day long. The best way to achieve this is by focussing on one thing at a time. You can do this by taking breaks from your daily routine, or even just going for a walk around. It refreshes your mind and gives you a chance to think outside the box.</h3>
+
+</div>
+
+<!--- End of Articles of Blog section -->
+
+
+
+
+<!--- Contact section -->
+<div id="contact" class="offset">
+<section>
+<div class="fixed-background">
+
+<div class="row dark text-center">
+
+	<div class="col-12">
+		<h1 class="heading">ABOUT ME</h1>
+		<div class="heading-underline" style="width: 4rem; height: .2rem; background-color: #1ebba3; margin: 0 auto 1rem;"></div>
+	</div>
+
+	<div class="col-md-5 contact">
+  			<img src="img/photo.png">
+  	</div>
+
+	<div class="col-md-5 contact">
+			<h3>The curiosity to learn more into the world of web development is what I am passionate about. Currently I am a learner and developer with interest in building websites.</h3>
+			<h3>My skills and specialities include Coding in C/C++, Python and web technologies like HTML, Bootstrap, CSS, mysql.</h3>
+
+  			<blockquote>
+  				<i class="fas fa-quote-left"></i>
+  				<h4>Student of NSUT East Campus, Delhi in Computer Science Engineering Department</h4>
+  				<hr class="contact-hr">
+  				<cite style="color: white; font-size: 25px;">&#8212; Dimple Verma</cite>
+  			</blockquote>
+  	</div>
+
+</div> <!--- End Row Dark -->
+	<div class="fixed-wrap">
+		<div class="fixed">
+		</div>
+	</div>
+</div> <!--- End Fixed Background -->
+</div> 
+	
+</section>
+
+<section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h5>Feel free to contact for queries</h5>
+          <p class="lead">OR<a href="" class="btn-get-started scrollto">Whatsapp</a></p>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="insert.php" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+<section>
+ <footer>
+ <div class="row justify-content-center">
+ 	<div class="col-md-5 text-center">
+ 		<img src="img/logo.png">
+ 		<p>Developer is an organism that turns coffee into code</p>
+ 		<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+ 		<a href="" target="_blank"><i class="fa fa-envelope"></i></a>
+ 		<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+ 	</div>	
+ 	<hr class="socket">
+ 	&copy; Developer's World.
+ </div>	<!-- End of Row -->
+ </footer>
+</section>	
+</div>
+
+<!--- End Contact section -->
+</div>
+
+<!--- Script Source Files -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->
+</div>
+<!--- End Home Section -->
